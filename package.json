@@ -1,0 +1,33 @@
+{
+  "name": "calculator-enconta",
+  "version": "1.0.0",
+  "description": "Test tecnical. calculator in Node with CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMR-Mejia/calculator-enconta.git"
+  },
+  "keywords": [
+    "Node",
+    "javascript",
+    "CLI",
+    "calculator"
+  ],
+  "author": "Jesus Mejia <https://github.com/JMR-Mejia>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JMR-Mejia/calculator-enconta/issues"
+  },
+  "homepage": "https://github.com/JMR-Mejia/calculator-enconta#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3"
+  }
+}
