@@ -2,7 +2,7 @@
 
 const inquirer = require("inquirer");
 
-const iterator = require("./iterator.steps");
+const iterator = require("../iterator.steps");
 
 const createQuery = (string) => {
   const query = {};

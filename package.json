@@ -4,6 +4,7 @@
   "description": "Test tecnical. calculator in Node with CLI",
   "main": "index.js",
   "scripts": {
+    "cli": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

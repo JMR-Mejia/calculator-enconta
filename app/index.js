@@ -1,9 +1,9 @@
 "use strict";
 
-const calcular = require("./operators");
+const calcular = require("./logic/operators");
 
-const query = require("./query");
-const msn = require('./grafic')
+const query = require("./console/query");
+const msn = require('./console/grafic')
 
 const operation = (async () => {
   let ANS = 0;
