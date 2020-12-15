@@ -20,7 +20,7 @@ View the website at: http://localhost:3000
 
 ### Structure
 
-A calculator object with operators:
+A calculator object with operators in [folder models](./models):
 
 -Addiction
 -Subtraction

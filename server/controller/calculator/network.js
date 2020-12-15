@@ -5,49 +5,78 @@ const controller = require("./controller");
 
 const router = express.Router();
 
+/**
+ * sum two values, recive in format JSON
+ * @return {object} success || error
+ */
+
 router.get("/addiction", function (req, res) {
   controller
-    .addiction(req.body.value1, req.body.value2)
-    .then((result) => {
-      response.success(req, res, result, 200);
-    })
-    .catch((e) => {
-      response.error(req, res, e.message, e.code, e);
-    });
+  .addiction(req.body.value1, req.body.value2)
+  .then((result) => {
+    response.success(req, res, result, 200);
+  })
+  .catch((e) => {
+    response.error(req, res, e.message, e.code, e);
+  });
 });
+
+/**
+ * substract two values, recive in format JSON
+ * @param {object} req
+ * @return {object} success || error
+ */
 
 router.get("/subtraction", function (req, res) {
   controller
-    .subtraction(req.body.value1, req.body.value2)
-    .then((result) => {
-      response.success(req, res, result, 200);
-    })
-    .catch((e) => {
-      response.error(req, res, e.message, e.code, e);
-    });
+  .subtraction(req.body.value1, req.body.value2)
+  .then((result) => {
+    response.success(req, res, result, 200);
+  })
+  .catch((e) => {
+    response.error(req, res, e.message, e.code, e);
+  });
 });
+
+/**
+ * multiply two values, recive in format JSON
+ * @param {object} req
+ * @return {object} success || error
+ */
 
 router.get("/multiplication", function (req, res) {
   controller
-    .multiplication(req.body.value1, req.body.value2)
-    .then((result) => {
-      response.success(req, res, result, 200);
-    })
-    .catch((e) => {
-      response.error(req, res, e.message, e.code, e);
-    });
+  .multiplication(req.body.value1, req.body.value2)
+  .then((result) => {
+    response.success(req, res, result, 200);
+  })
+  .catch((e) => {
+    response.error(req, res, e.message, e.code, e);
+  });
 });
+
+/**
+ * divide two values, recive in format JSON
+ * @param {object} req
+ * @return {object} success || error
+ */
 
 router.get("/division", function (req, res) {
   controller
-    .division(req.body.value1, req.body.value2)
-    .then((result) => {
-      response.success(req, res, result, 200);
-    })
-    .catch((e) => {
-      response.error(req, res, e.message, e.code, e);
-    });
+  .division(req.body.value1, req.body.value2)
+  .then((result) => {
+    response.success(req, res, result, 200);
+  })
+  .catch((e) => {
+    response.error(req, res, e.message, e.code, e);
+  });
 });
+
+/**
+ * Opera two values  , recive in format JSON
+ * @param {object} req
+ * @return {object} success || error
+ */
 
 router.get("/equal", function (req, res) {
   controller

@@ -19,9 +19,10 @@ this will instal all dependencies for your execute.
 ## Task list
 
 - [x] Command line interface
-- [ ] Init backend
-- [ ] Create Calculator
+- [x] Init backend
+- [x] Create Calculator
 - [ ] Test
+- [ ] Connect with Travis CI
 - [ ] Check in
 
 ## People
