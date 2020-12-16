@@ -16,8 +16,8 @@ function division(value1, value2) {
   return calculator.division(value1, value2);
 }
 
-function equal(value1, value2, operator) {
-  return calculator.equal(value1, value2, operator);
+function equal(value1, operator) {
+  return calculator.equal(value1, operator);
 }
 
 function clear() {

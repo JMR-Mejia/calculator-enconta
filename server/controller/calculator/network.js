@@ -80,7 +80,7 @@ router.get("/division", function (req, res) {
 
 router.get("/equal", function (req, res) {
   controller
-    .equal(req.body.value1, req.body.value2, req.body.operator)
+    .equal(req.body.value || 0, req.body.operator)
     .then((result) => {
       response.success(req, res, result, 200);
     })

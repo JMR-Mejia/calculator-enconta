@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Server routes tests Get addiction Value 1 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get addiction Value 2 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get division Value 1 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get division Value 2 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get equal Value 2 is incorrect 1`] = `"Faltan valores"`;
+
+exports[`Server routes tests Get equal Value is incorrect 1`] = `"Operador invalido"`;
+
+exports[`Server routes tests Get multiplication Value 1 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get multiplication Value 2 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get subtraction Value 1 is incorrect 1`] = `"Debe ser un numero"`;
+
+exports[`Server routes tests Get subtraction Value 2 is incorrect 1`] = `"Debe ser un numero"`;

@@ -4,7 +4,7 @@ let operators = ["+", "-", "*", "/", "=", "C"];
 
 function addiction(value1, value2) {
   return new Promise((resolve, reject) => {
-    if (!value1 || !value2) {
+    if (value1 === undefined || value2 === undefined) {
       return reject({ e: "", code: 400, message: "Falta valores" });
     }
     if (Number.isFinite(value1) === false || Number.isFinite(value2) === false)
@@ -16,7 +16,7 @@ function addiction(value1, value2) {
 
 function subtraction(value1, value2) {
   return new Promise((resolve, reject) => {
-    if (!value1 || !value2) {
+    if (value1 === undefined || value2 === undefined) {
       return reject({ e: "", code: 400, message: "Falta valores" });
     }
     if (Number.isFinite(value1) === false || Number.isFinite(value2) === false)
@@ -28,7 +28,7 @@ function subtraction(value1, value2) {
 
 function multiplication(value1, value2) {
   return new Promise((resolve, reject) => {
-    if (!value1 || !value2) {
+    if (value1 === undefined || value2 === undefined) {
       return reject({ e: "", code: 400, message: "Falta valores" });
     }
     if (Number.isFinite(value1) === false || Number.isFinite(value2) === false)
@@ -40,7 +40,7 @@ function multiplication(value1, value2) {
 
 function division(value1, value2) {
   return new Promise((resolve, reject) => {
-    if (!value1 || !value2) {
+    if (value1 === undefined || value2 === undefined) {
       return reject({ e: "", code: 400, message: "Falta valores" });
     }
     if (Number.isFinite(value1) === false || Number.isFinite(value2) === false)
@@ -50,17 +50,17 @@ function division(value1, value2) {
   });
 }
 
-function equal(value1, value2, operator) {
+function equal(value1, operator) {
   return new Promise((resolve, reject) => {
-    if (!value1 || !value2 || !operator) {
+    if (value1 === undefined || !operator) {
       return reject({ e: "", code: 400, message: "Faltan valores" });
     }
-    if (Number.isFinite(value1) === false || Number.isFinite(value2) === false)
+    if (Number.isFinite(value1) === false)
       reject({ e: "", code: 400, message: "Debe ser un numero" });
     if (operators.includes(operator) === false)
       reject({ e: "", code: 400, message: "Operador invalido" });
 
-    resolve(store.equal(value1, value2, operator));
+    resolve(store.equal(value1, operator));
   });
 }
 

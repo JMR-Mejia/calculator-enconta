@@ -1,5 +1,7 @@
 "use strict";
 
+const e = require("express");
+
 /**
  * Response when the opeartion is successfull
  *
@@ -27,7 +29,9 @@ exports.success = function (req, res, message, status) {
  */
 
 exports.error = function (req, res, message, status, details) {
-  console.error("[response error] ", details);
+  if (status === 500) {
+    console.error("[response error] ", details);
+  }
 
   res.status(status || 500).send({
     error: message,

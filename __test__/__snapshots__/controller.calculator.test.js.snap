@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controller test Addiction Error in string in value 2 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Addiction Error in string in value1 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Addiction Error when value1 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Addiction Error when value2 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Division Error in string in value 2 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Division Error in string in value1 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Division Error when value1 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Division Error when value2 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Equal Error in operator incorrect 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Operador invalido",
+}
+`;
+
+exports[`Controller test Equal Error in string for value1 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Equal Error when opeartor is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Equal Error when value1 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Multiplication Error in string in value 2 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Multiplication Error in string in value1 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Multiplication Error when value1 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Multiplication Error when value2 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Subtraction Error in string in value 2 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Subtraction Error in string in value1 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Debe ser un numero",
+}
+`;
+
+exports[`Controller test Subtraction Error when value1 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
+
+exports[`Controller test Subtraction Error when value2 is undefined 1`] = `
+Object {
+  "code": 400,
+  "e": "",
+  "message": "Falta valores",
+}
+`;
