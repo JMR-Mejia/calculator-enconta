@@ -12,13 +12,13 @@ const router = express.Router();
 
 router.get("/addiction", function (req, res) {
   controller
-  .addiction(req.body.value1, req.body.value2)
-  .then((result) => {
-    response.success(req, res, result, 200);
-  })
-  .catch((e) => {
-    response.error(req, res, e.message, e.code, e);
-  });
+    .addiction(parseFloat(req.query.value1), parseFloat(req.query.value2))
+    .then((result) => {
+      response.success(req, res, result, 200);
+    })
+    .catch((e) => {
+      response.error(req, res, e.message, e.code, e);
+    });
 });
 
 /**
@@ -29,13 +29,13 @@ router.get("/addiction", function (req, res) {
 
 router.get("/subtraction", function (req, res) {
   controller
-  .subtraction(req.body.value1, req.body.value2)
-  .then((result) => {
-    response.success(req, res, result, 200);
-  })
-  .catch((e) => {
-    response.error(req, res, e.message, e.code, e);
-  });
+    .subtraction(parseFloat(req.query.value1), parseFloat(req.query.value2))
+    .then((result) => {
+      response.success(req, res, result, 200);
+    })
+    .catch((e) => {
+      response.error(req, res, e.message, e.code, e);
+    });
 });
 
 /**
@@ -46,13 +46,13 @@ router.get("/subtraction", function (req, res) {
 
 router.get("/multiplication", function (req, res) {
   controller
-  .multiplication(req.body.value1, req.body.value2)
-  .then((result) => {
-    response.success(req, res, result, 200);
-  })
-  .catch((e) => {
-    response.error(req, res, e.message, e.code, e);
-  });
+    .multiplication(parseFloat(req.query.value1), parseFloat(req.query.value2))
+    .then((result) => {
+      response.success(req, res, result, 200);
+    })
+    .catch((e) => {
+      response.error(req, res, e.message, e.code, e);
+    });
 });
 
 /**
@@ -63,13 +63,13 @@ router.get("/multiplication", function (req, res) {
 
 router.get("/division", function (req, res) {
   controller
-  .division(req.body.value1, req.body.value2)
-  .then((result) => {
-    response.success(req, res, result, 200);
-  })
-  .catch((e) => {
-    response.error(req, res, e.message, e.code, e);
-  });
+    .division(parseFloat(req.query.value1), parseFloat(req.query.value2))
+    .then((result) => {
+      response.success(req, res, result, 200);
+    })
+    .catch((e) => {
+      response.error(req, res, e.message, e.code, e);
+    });
 });
 
 /**
@@ -79,8 +79,9 @@ router.get("/division", function (req, res) {
  */
 
 router.get("/equal", function (req, res) {
+  if (req.query.operator === "s") req.query.operator = "+";
   controller
-    .equal(req.body.value || 0, req.body.operator)
+    .equal(parseFloat(req.query.value || 0), req.query.operator)
     .then((result) => {
       response.success(req, res, result, 200);
     })
