@@ -18,8 +18,8 @@ this will instal all dependencies for your execute.
 
 ### Quick Start
 
-- [Command Line Interface](./app)
 - [Backend server](./server)
+- [Command Line Interface](./app)
 
 ## Task list
 
