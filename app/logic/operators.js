@@ -1,17 +1,71 @@
-const calcular = (ANS, operator, value) => {
+const axios = require("axios");
+
+const server = async (operator, values) => {
+  const response = await axios.get(
+    `http://localhost:3000/calculator/${operator}`,
+    {
+      params: values,
+    }
+  );
+  return response.data;
+};
+
+const calcular = async (operator, ANS, value) => {
   switch (operator) {
     case "+":
-      return ANS + value;
+      try {
+        const result = await server("addiction", {
+          value1: ANS,
+          value2: value,
+        });
+        return result.body;
+      } catch (e) {
+        return e.message;
+      }
     case "-":
-      return ANS - value;
+      try {
+        const result = await server("subtraction", {
+          value1: ANS,
+          value2: value,
+        });
+        return result.body;
+      } catch (e) {
+        return e.message;
+      }
     case "*":
-      return ANS * value;
+      try {
+        const result = await server("multiplication", {
+          value1: ANS,
+          value2: value,
+        });
+        return result.body;
+      } catch (e) {
+        return e.message;
+      }
     case "/":
-      return ANS / value;
-    case "=":
-      return ANS + ANS;
+      try {
+        const result = await server("division", { value1: ANS, value2: value });
+        return result.body;
+      } catch (e) {
+        return e.message;
+      }
+    case "i":
+      try {
+        const result = await server("equal", {
+          value: ANS,
+          operator: value,
+        });
+        return result.body;
+      } catch (e) {
+        return e.message;
+      }
     case "C":
-      return 0;
+      try {
+        const result = await server("clear");
+        return result.body;
+      } catch (e) {
+        return e.message;
+      }
   }
 };
 

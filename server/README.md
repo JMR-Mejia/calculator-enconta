@@ -11,11 +11,24 @@ After installing the dependencies run the server:
 Start the server:
 
 ```bash
-$ npm start
+$ npm run start:server
 ```
 
 View the website at: http://localhost:3000
 
+### Other options
+
+Stop the server:
+
+```bash
+$ npm run stop:server
+```
+
+For maintance the server:
+
+```bash
+$ npm run server:dev
+```
 ## App
 
 ### Structure

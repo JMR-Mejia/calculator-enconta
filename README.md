@@ -16,12 +16,17 @@ $ npm install --production
 
 this will instal all dependencies for your execute.
 
+### Quick Start
+
+- [Command Line Interface](./app)
+- [Backend server](./server)
+
 ## Task list
 
 - [x] Command line interface
 - [x] Init backend
 - [x] Create Calculator
-- [ ] Test
+- [x] Test
 - [ ] Connect with Travis CI
 - [ ] Check in
 

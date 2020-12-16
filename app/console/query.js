@@ -24,7 +24,10 @@ const createQuery = (string) => {
   return query;
 };
 
-const queryParams = () => {
+const queryParams = (operator) => {
+  if (operator === 'i') {
+    iterator.next().value
+  }
   let string;
 
   iterator.next().value % 2 === 0 ? (string = "value") : (string = "operator");
